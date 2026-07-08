@@ -1,4 +1,3 @@
-$content = @'
 FROM alpine:latest
 
 RUN apk add --no-cache ca-certificates wget unzip
@@ -10,5 +9,3 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v0.23.2/pock
 EXPOSE 8090
 
 CMD ["./pocketbase", "serve", "--http=0.0.0.0:8090"]
-'@
-$content | Set-Content -Path "C:\apps-mitra-niaga-ternak\database\Dockerfile" -Encoding utf8
