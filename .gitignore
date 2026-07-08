@@ -1,0 +1,4 @@
+@"
+pocketbase.exe
+pb_data/
+"@ | Out-File -FilePath "C:\apps-mitra-niaga-ternak\database\.gitignore" -Encoding utf8 -NoNewline
