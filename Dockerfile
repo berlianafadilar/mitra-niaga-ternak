@@ -10,8 +10,7 @@ RUN wget https://github.com/pocketbase/pocketbase/releases/download/v0.23.2/pock
     rm pocketbase_0.23.2_linux_amd64.zip && \
     chmod +x pocketbase
 
-# Copy migrations and custom JavaScript hooks to the container
-COPY pb_migrations /pb/pb_migrations
+# Copy custom JavaScript hooks to the container
 COPY pb_hooks /pb/pb_hooks
 
 EXPOSE 8090
